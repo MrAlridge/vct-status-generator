@@ -1,3 +1,4 @@
+testdata = json.loads("""
 {
     "code": 200,
     "data": {
@@ -2028,3 +2029,4 @@
         ]
     }
 }
+""")
