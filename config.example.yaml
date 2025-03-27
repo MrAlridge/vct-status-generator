@@ -1,0 +1,22 @@
+# vct-status 配置文件
+
+database:
+  # 开发环境下默认使用的SQLite
+  sqlite:
+    # 项目根目录的相对路径
+    path: "vct_data.db"
+
+  # 生产环境下的数据库配置(MariaDB/MySQL)
+  # 生产环境下推荐使用DATABASE_URL环境变量来存储敏感数据
+  # 直接写在这里不太安全.
+  mariadb:
+    # ! 如果不使用环境变量，就按以下示例写配置
+    # host: "localhost"
+    # port: 3306
+    # user: "your_prod_user"
+    # password: "your_prod_password"
+    # dbname: "vct_status_prod"
+    # charset: "utf8mb4"
+    #
+    # 包含完整数据库连接URL的环境变量名
+    env_var_url: "DATABASE_URL" # ::DATABASE_URL::
