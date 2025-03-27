@@ -1,1 +1,59 @@
 .venv
+# Python字节码和优化文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C扩展
+*.so
+
+# 分发/打包
+build/
+dist/
+*.egg-info/
+*.egg
+
+# 虚拟环境 (根据你的环境名称调整，venv 是常见的选择)
+.env
+.venv
+env/
+venv/
+ENV/
+
+# 测试和覆盖率报告
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE 和编辑器配置文件
+.idea/
+.vscode/
+*.sublime-*
+
+# 日志文件
+*.log
+
+# 操作系统生成的文件
+.DS_Store
+Thumbs.db
+
+# 数据库文件 (如果使用 SQLite)
+*.db
+*.db-journal*
+
+# 配置文件和敏感信息 (非常重要！)
+# <SECURITY_REVIEW>
+# 将包含敏感信息（如API密钥、数据库密码）的文件添加到 .gitignore
+# 是防止意外将它们提交到版本控制系统（如Git）的关键安全措施。
+# 根据你实际使用的文件名调整。
+config.yaml
+secrets.toml
+.env.*
+credentials.json
+# </SECURITY_REVIEW>
+
+# Selenium/WebDriver 日志或驱动程序 (如果本地下载)
+geckodriver.log
+chromedriver.log
+webdrivermanager/ # 如果使用 webdriver-manager 库
+drivers/ # 如果手动下载驱动到此目录
