@@ -64,3 +64,6 @@ drivers/ # 如果手动下载驱动到此目录
 *.db
 *.db-journal*
 vct_data.db # 添加我们指定的 SQLite 文件名
+
+# 生成的图片
+generated_images/
