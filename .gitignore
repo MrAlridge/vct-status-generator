@@ -67,3 +67,12 @@ vct_data.db # 添加我们指定的 SQLite 文件名
 
 # 生成的图片
 generated_images/
+
+# Django相关文件
+*.sqlite3 # Django默认数据库文件
+*.sqlite3-journal # SQLite的事务日志文件
+*.pyc # Python字节码文件
+*.pyo # Python优化代码文件
+*.pyd # Python扩展模块文件
+*.dll # Windows动态链接库文件
+*.so # Linux共享对象文件
